@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Force \"f:\\\\client work\\\\roman-client\" | Select-Object Name, Length; Write-Output \"---NODE---\"; \\(Get-Command node\\).Source; node -v; npm -v)",
+      "Bash(mkdir -p public)",
+      "Bash(curl -L -s -o public/dubai.png \"https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=2000&q=80\" -w \"dubai:%{http_code} size:%{size_download}\\\\n\")",
+      "Bash(curl -L -s -o public/world-map.png \"https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png\" -w \"world:%{http_code} size:%{size_download}\\\\n\")",
+      "Bash(sed 's/#bcbcbc/#0f3c49/g' public/test2.svg)",
+      "Bash(rm -f public/test1.svg public/test3.svg public/test2.svg public/world-map.png)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 5; \"RUNNING - status $\\($r.StatusCode\\)\" } catch { \"NOT RUNNING: $\\($_.Exception.Message\\)\" })",
+      "Bash(npm run *)",
+      "Bash(echo \"started pid $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(command -v chromium-cli chrome chromium google-chrome)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Bash(npx --no-install playwright --version)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --window-size=1400,1600 --screenshot=C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/eb293ec6-ee07-4abb-8aac-a04273657c2c/scratchpad/footer.png --virtual-time-budget=5000 'http://localhost:3000/#offices')",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --hide-scrollbars --window-size=1400,7200 --screenshot=C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/eb293ec6-ee07-4abb-8aac-a04273657c2c/scratchpad/full.png --virtual-time-budget=6000 http://localhost:3000)"
+    ]
+  }
+}
