@@ -78,8 +78,6 @@ export default function WorldMap() {
   return (
     <section className="world" id="world">
       <div className="container">
-        <h2 className="section-title">Our Global Presence</h2>
-
         <div className="world-map">
           {locations.map((loc) => (
             <button
@@ -87,6 +85,8 @@ export default function WorldMap() {
               key={loc.name}
               className={`location ${active.name === loc.name ? "active" : ""}`}
               style={{ top: loc.top, left: loc.left }}
+              onMouseEnter={() => setActive(loc)}
+              onFocus={() => setActive(loc)}
               onClick={() => setActive(loc)}
               aria-label={`Show ${loc.name} office details`}
             >

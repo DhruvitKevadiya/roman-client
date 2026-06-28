@@ -16,12 +16,6 @@ export default function Hero() {
             advancing innovation, technology, and sustainable development
             through research, collaboration, and responsible investment.
           </p>
-          <a className="btn" href="#features">
-            Learn More
-            <span className="btn-arrow" aria-hidden="true">
-              →
-            </span>
-          </a>
         </div>
       </div>
     </section>

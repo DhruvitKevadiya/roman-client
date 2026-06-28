@@ -143,7 +143,7 @@ function BuildingIcon({ name }) {
 function Logo() {
   return (
     <div className="foot-brand">
-      <img src="/logo-light.png" alt="PROKOPOVIC Foundation" className="foot-logo-img" />
+      <img src="/logo.png" alt="PROKOPOVIC Foundation" className="foot-logo-img" />
     </div>
   );
 }
