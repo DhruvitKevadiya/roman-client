@@ -4,8 +4,7 @@ const offices = [
     icon: "panama",
     address: [
       "PROKOPOVIC Foundation",
-      "The Ocean Club (JW Marriott Panama,",
-      "formerly Trump Ocean Club)",
+      "Trump Ocean Club / JW Marriott",
       "Calle Punta Colón, Punta Pacifica,",
       "San Francisco District",
       "Panama City 0801",
@@ -175,7 +174,7 @@ export default function Footer() {
         </div>
 
         <div className="foot-copy">
-          © 2024 PROKOPOVIC Foundation. All rights reserved.
+          © 2027 PROKOPOVIC Foundation. All rights reserved.
         </div>
       </div>
     </footer>

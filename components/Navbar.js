@@ -24,7 +24,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-inner">
         <a href="#" className="logo">
-          <img src="/logo-light.png" alt="PROKOPOVIC Foundation" className="logo-img" />
+          <img src="/logo.png" alt="PROKOPOVIC Foundation" className="logo-img" />
         </a>
 
         <ul className={`nav-links ${open ? "open" : ""}`}>

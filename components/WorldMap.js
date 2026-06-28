@@ -4,58 +4,68 @@ import { useState } from "react";
 
 const locations = [
   {
-    name: "New York",
-    top: "31%",
-    left: "27%",
+    name: "Panama",
+    top: "54%",
+    left: "24%",
     role: "Office",
-    address: ["1 Park Avenue", "New York, United States"],
-    phone: "+1 212 000 0000",
-    email: "newyork@prokopovic.com",
+    address: [
+      "Trump Ocean Club / JW Marriott",
+      "Calle Punta Colón, Punta Pacifica,",
+      "San Francisco District",
+      "Panama City 0801",
+      "Panama",
+    ],
+    email: "hq_pa@prokopovic.com",
   },
   {
-    name: "London",
-    top: "23%",
-    left: "46%",
+    name: "Zurich",
+    top: "26%",
+    left: "49%",
     role: "Office",
-    address: ["Mayfair, W1K", "London, United Kingdom"],
-    phone: "+44 20 0000 0000",
-    email: "london@prokopovic.com",
+    address: ["Bahnhofstrasse 45", "8001 Zurich", "Switzerland"],
+    email: "hq_ch@prokopovic.com",
+  },
+  {
+    name: "Moscow",
+    top: "20%",
+    left: "57%",
+    role: "Office",
+    address: [
+      "Federation Tower East",
+      "12 Presnenskaya Embankment",
+      "Moscow International",
+      "Business Center (Moscow City)",
+      "Moscow 123112",
+      "Russia",
+    ],
+    email: "hq_ru@prokopovic.com",
   },
   {
     name: "Dubai",
     top: "43%",
     left: "63%",
     role: "Headquarters",
-    address: ["One Central, World Trade Centre", "Dubai, United Arab Emirates"],
-    phone: "+971 4 000 0000",
-    email: "dubai@prokopovic.com",
-  },
-  {
-    name: "Singapore",
-    top: "60%",
-    left: "77%",
-    role: "Office",
-    address: ["Marina Bay", "Singapore"],
-    phone: "+65 6000 0000",
-    email: "singapore@prokopovic.com",
+    address: [
+      "Emirates Financial Towers",
+      "Dubai International",
+      "Financial Centre (DIFC)",
+      "Dubai, P.O. Box 507006",
+      "United Arab Emirates",
+    ],
+    email: "hq_ae@prokopovic.com",
   },
   {
     name: "Hong Kong",
     top: "44%",
     left: "80%",
     role: "Office",
-    address: ["Central District", "Hong Kong"],
-    phone: "+852 0000 0000",
-    email: "hongkong@prokopovic.com",
-  },
-  {
-    name: "São Paulo",
-    top: "74%",
-    left: "35%",
-    role: "Office",
-    address: ["Av. Faria Lima", "São Paulo, Brazil"],
-    phone: "+55 11 0000 0000",
-    email: "saopaulo@prokopovic.com",
+    address: [
+      "Two International Finance Centre",
+      "8 Finance Street",
+      "Central",
+      "Hong Kong",
+    ],
+    email: "hq_hk@prokopovic.com",
   },
 ];
 
@@ -97,7 +107,6 @@ export default function WorldMap() {
             {active.address.map((line, i) => (
               <p key={i}>{line}</p>
             ))}
-            <p>{active.phone}</p>
             <p>
               <a href={`mailto:${active.email}`}>{active.email}</a>
             </p>
