@@ -5,8 +5,8 @@ import { useState } from "react";
 const locations = [
   {
     name: "Panama",
-    top: "54%",
-    left: "24%",
+    top: "45%",
+    left: "27.9%",
     role: "Office",
     address: [
       "Trump Ocean Club / JW Marriott",
@@ -19,16 +19,16 @@ const locations = [
   },
   {
     name: "Zurich",
-    top: "26%",
-    left: "49%",
+    top: "23.7%",
+    left: "52.4%",
     role: "Office",
     address: ["Bahnhofstrasse 45", "8001 Zurich", "Switzerland"],
     email: "hq_ch@prokopovic.com",
   },
   {
     name: "Moscow",
-    top: "20%",
-    left: "57%",
+    top: "19%",
+    left: "60.5%",
     role: "Office",
     address: [
       "Federation Tower East",
@@ -42,8 +42,8 @@ const locations = [
   },
   {
     name: "Dubai",
-    top: "43%",
-    left: "63%",
+    top: "36%",
+    left: "65.4%",
     role: "Headquarters",
     address: [
       "Emirates Financial Towers",
@@ -56,8 +56,8 @@ const locations = [
   },
   {
     name: "Hong Kong",
-    top: "44%",
-    left: "80%",
+    top: "37.6%",
+    left: "81.7%",
     role: "Office",
     address: [
       "Two International Finance Centre",

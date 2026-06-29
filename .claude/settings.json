@@ -16,7 +16,10 @@
       "Read(//c/Program Files/Google/Chrome/Application/**)",
       "Bash(npx --no-install playwright --version)",
       "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --window-size=1400,1600 --screenshot=C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/eb293ec6-ee07-4abb-8aac-a04273657c2c/scratchpad/footer.png --virtual-time-budget=5000 'http://localhost:3000/#offices')",
-      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --hide-scrollbars --window-size=1400,7200 --screenshot=C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/eb293ec6-ee07-4abb-8aac-a04273657c2c/scratchpad/full.png --virtual-time-budget=6000 http://localhost:3000)"
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --hide-scrollbars --window-size=1400,7200 --screenshot=C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/eb293ec6-ee07-4abb-8aac-a04273657c2c/scratchpad/full.png --virtual-time-budget=6000 http://localhost:3000)",
+      "PowerShell(Get-Content \"C:\\\\Users\\\\dhruv\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\f--client-work-roman-client\\\\4d1688dd-8e58-49a3-90e0-8256a03deb8f\\\\tasks\\\\b2wf6zvsk.output\" -Raw; \"=== node_modules exists: $\\(Test-Path node_modules\\)\")",
+      "PowerShell(npm run dev)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 20; \"Status: $\\($r.StatusCode\\)  Length: $\\($r.Content.Length\\)\" } catch { \"ERR: $\\($_.Exception.Message\\)\" })"
     ]
   }
 }
