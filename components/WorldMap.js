@@ -5,8 +5,8 @@ import { useState } from "react";
 const locations = [
   {
     name: "Panama",
-    top: "45%",
-    left: "23.7%",
+    top: "43%",
+    left: "24.9%",
     role: "Office",
     address: [
       "Trump Ocean Club / JW Marriott",
@@ -19,16 +19,16 @@ const locations = [
   },
   {
     name: "Zurich",
-    top: "23.7%",
-    left: "49.2%",
+    top: "20.7%",
+    left: "48.9%",
     role: "Office",
     address: ["Bahnhofstrasse 45", "8001 Zurich", "Switzerland"],
     email: "hq_ch@prokopovic.com",
   },
   {
     name: "Moscow",
-    top: "19%",
-    left: "57.6%",
+    top: "17.8%",
+    left: "56.5%",
     role: "Office",
     address: [
       "Federation Tower East",
@@ -42,8 +42,8 @@ const locations = [
   },
   {
     name: "Dubai",
-    top: "36%",
-    left: "62.7%",
+    top: "33.5%",
+    left: "61.7%",
     role: "Headquarters",
     address: [
       "Emirates Financial Towers",
@@ -56,8 +56,8 @@ const locations = [
   },
   {
     name: "Hong Kong",
-    top: "37.6%",
-    left: "79.7%",
+    top: "34.7%",
+    left: "78.4%",
     role: "Office",
     address: [
       "Two International Finance Centre",
@@ -70,10 +70,8 @@ const locations = [
 ];
 
 export default function WorldMap() {
-  // default to the headquarters
-  const [active, setActive] = useState(
-    locations.find((l) => l.role === "Headquarters") || locations[0]
-  );
+  // no popup open by default — only shows on hover/focus/click
+  const [active, setActive] = useState(null);
 
   return (
     <section className="world" id="world">
@@ -83,7 +81,7 @@ export default function WorldMap() {
             <button
               type="button"
               key={loc.name}
-              className={`location ${active.name === loc.name ? "active" : ""}`}
+              className={`location ${active?.name === loc.name ? "active" : ""}`}
               style={{ top: loc.top, left: loc.left }}
               onMouseEnter={() => setActive(loc)}
               onFocus={() => setActive(loc)}
@@ -94,23 +92,25 @@ export default function WorldMap() {
             </button>
           ))}
 
-          <div
-            className={`popup map-popup side-${
-              parseFloat(active.left) > 55 ? "left" : "right"
-            }`}
-            style={{ top: active.top, left: active.left }}
-            key={active.name}
-          >
-            <h4>
-              {active.name} — {active.role}
-            </h4>
-            {active.address.map((line, i) => (
-              <p key={i}>{line}</p>
-            ))}
-            <p>
-              <a href={`mailto:${active.email}`}>{active.email}</a>
-            </p>
-          </div>
+          {active && (
+            <div
+              className={`popup map-popup side-${
+                parseFloat(active.left) > 55 ? "left" : "right"
+              }`}
+              style={{ top: active.top, left: active.left }}
+              key={active.name}
+            >
+              <h4>
+                {active.name} — {active.role}
+              </h4>
+              {active.address.map((line, i) => (
+                <p key={i}>{line}</p>
+              ))}
+              <p>
+                <a href={`mailto:${active.email}`}>{active.email}</a>
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>
