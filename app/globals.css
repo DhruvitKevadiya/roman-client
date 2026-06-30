@@ -594,12 +594,33 @@ p {
     margin: 40px auto 0;
     transform: none;
   }
+  /* don't shrink the map on mobile — keep it full size and scroll sideways */
+  .world-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
   .world-map {
-    min-height: 420px;
+    width: 760px;
+    max-width: none;
+    min-height: 0;
   }
   .foot-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+  /* center the footer content on mobile */
+  .foot-office {
+    text-align: center;
+  }
+  .foot-icon {
+    justify-content: center;
+  }
+  .foot-brand {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .features-bar {
     flex-wrap: wrap;

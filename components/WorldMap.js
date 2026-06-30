@@ -76,6 +76,7 @@ export default function WorldMap() {
   return (
     <section className="world" id="world">
       <div className="container">
+        <div className="world-scroll">
         <div className="world-map">
           {locations.map((loc) => (
             <button
@@ -111,6 +112,7 @@ export default function WorldMap() {
               </p>
             </div>
           )}
+        </div>
         </div>
       </div>
     </section>

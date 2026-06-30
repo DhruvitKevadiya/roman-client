@@ -25,7 +25,9 @@
       "Bash(npx --no-install playwright install chromium)",
       "Bash(node \"C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/c3bf8b73-3fe7-4289-bd20-c13411dad5c4/scratchpad/shot.js\")",
       "Bash(node \"C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/c3bf8b73-3fe7-4289-bd20-c13411dad5c4/scratchpad/calib.js\")",
-      "Bash(node \"C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/c3bf8b73-3fe7-4289-bd20-c13411dad5c4/scratchpad/grid.js\")"
+      "Bash(node \"C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/c3bf8b73-3fe7-4289-bd20-c13411dad5c4/scratchpad/grid.js\")",
+      "Bash(node \"C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/c3bf8b73-3fe7-4289-bd20-c13411dad5c4/scratchpad/foot.js\")",
+      "Bash(node \"C:/Users/dhruv/AppData/Local/Temp/claude/f--client-work-roman-client/c3bf8b73-3fe7-4289-bd20-c13411dad5c4/scratchpad/worldmob.js\")"
     ]
   }
 }
