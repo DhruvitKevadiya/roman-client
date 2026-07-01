@@ -7,8 +7,9 @@ const locations = [
     name: "Panama",
     top: "43%",
     left: "24.9%",
-    role: "Office",
+    role: "Headquarters",
     address: [
+      "PROKOPOVIC Foundation",
       "Trump Ocean Club / JW Marriott",
       "Calle Punta Colón, Punta Pacifica,",
       "San Francisco District",
@@ -22,7 +23,12 @@ const locations = [
     top: "20.7%",
     left: "48.9%",
     role: "Office",
-    address: ["Bahnhofstrasse 45", "8001 Zurich", "Switzerland"],
+    address: [
+      "PROKOPOVIC Foundation",
+      "Bahnhofstrasse 45",
+      "8001 Zurich",
+      "Switzerland",
+    ],
     email: "hq_ch@prokopovic.com",
   },
   {
@@ -31,6 +37,7 @@ const locations = [
     left: "56.5%",
     role: "Office",
     address: [
+      "PROKOPOVIC Foundation",
       "Federation Tower East",
       "12 Presnenskaya Embankment",
       "Moscow International",
@@ -44,8 +51,9 @@ const locations = [
     name: "Dubai",
     top: "33.5%",
     left: "61.7%",
-    role: "Headquarters",
+    role: "Office",
     address: [
+      "PROKOPOVIC Foundation",
       "Emirates Financial Towers",
       "Dubai International",
       "Financial Centre (DIFC)",
@@ -60,6 +68,7 @@ const locations = [
     left: "78.4%",
     role: "Office",
     address: [
+      "PROKOPOVIC Foundation",
       "Two International Finance Centre",
       "8 Finance Street",
       "Central",
