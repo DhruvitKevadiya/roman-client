@@ -59,7 +59,9 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 28px 0;
-  transition: background 0.3s ease, padding 0.3s ease;
+  transition:
+    background 0.3s ease,
+    padding 0.3s ease;
 }
 
 .navbar.scrolled {
@@ -154,7 +156,7 @@ p {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("/main.jpg") right top/cover;
+  background: url("/main2.png") right top/cover;
   filter: brightness(0.95);
 }
 
@@ -375,7 +377,9 @@ p {
   border: none;
   padding: 0;
   font-family: inherit;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .location:hover {
@@ -441,7 +445,10 @@ p {
 .map-popup {
   position: absolute;
   z-index: 3;
-  transition: top 0.3s ease, left 0.3s ease, transform 0.3s ease;
+  transition:
+    top 0.3s ease,
+    left 0.3s ease,
+    transform 0.3s ease;
 }
 
 /* open to the right of the pin (left-side cities) */
@@ -587,21 +594,21 @@ p {
   .section-title {
     font-size: 38px;
   }
-  .map-popup,
-  .map-popup.side-left,
-  .map-popup.side-right {
-    position: static;
-    margin: 40px auto 0;
-    transform: none;
-  }
-  /* don't shrink the map on mobile — keep it full size and scroll sideways */
+  /* Mobile: render the map EXACTLY like desktop — labels shown, and popups that
+     float beside each pin — then make it horizontally scrollable. The map keeps a
+     desktop-scale fixed width; there is intentionally NO .map-popup or .location
+     override here, so both inherit the desktop rules. The popup stays position:
+     absolute (out of flow), so it can never stretch the map or shift the pins.
+     Vertical padding gives tall popups (e.g. Moscow, high on the map) room, since
+     overflow-x:auto forces overflow-y to 'auto' and would otherwise clip anything
+     extending above the map. */
   .world-scroll {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 10px;
+    padding: 90px 0;
   }
   .world-map {
-    width: 760px;
+    width: 1260px;
     max-width: none;
     min-height: 0;
   }
