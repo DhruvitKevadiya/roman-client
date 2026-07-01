@@ -156,7 +156,7 @@ p {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("/main2.png") right top/cover;
+  background: url("/main2.jpg") right top/cover;
   filter: brightness(0.95);
 }
 
